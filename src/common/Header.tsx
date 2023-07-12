@@ -36,7 +36,7 @@ export const Header = () => {
 
           {/* Column 2 */}
           <CCol xs={6} md={6} lg={6} xl={6} xxl={6}>
-            <CNavbarToggler onClick={toggleNavigation} />
+            <CNavbarToggler onClick={toggleNavigation} className="border-0" />
 
             <CCollapse visible={showNavigation}>
               <CNavbarNav className="navbar-nav">

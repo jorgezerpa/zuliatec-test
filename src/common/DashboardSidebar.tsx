@@ -15,8 +15,17 @@ export const DashboardSidebar = () => {
     <CNav className="flex-column text-white h-100" style={{ background:"#708524", paddingTop:'100px' }}>
         {
             Items.map((Item)=>(
+                Item.label==="Tracking Operations" 
+                ?
                 <CNavItem className='align-content-center mb-1'>
-                    <CNavLink href="#" className='text-white'>
+                    <CNavLink  href="#" className='text-white mx-2' style={{borderRadius:'10px', background:'rgba(255,255,255,.3)'}}>
+                        <span className='pr-1'>{ Item.icon }</span>
+                        <span>{ Item.label }</span>
+                    </CNavLink>
+                </CNavItem>
+                :
+                <CNavItem className='align-content-center mb-1'>
+                    <CNavLink  href="#" className='text-white mx-2' style={{borderRadius:'10px'}}>
                         <span className='pr-1'>{ Item.icon }</span>
                         <span>{ Item.label }</span>
                     </CNavLink>
