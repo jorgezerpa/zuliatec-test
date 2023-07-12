@@ -26,9 +26,9 @@ export const Header = () => {
   };
 
   return (
-    <CNavbar className="navbar navbar-light bg-white shadow-sm py-4 position-absolute w-100" style={{ zIndex:100 }}>
-      <CContainer fluid>
-        <CRow className="w-100">
+    <CNavbar className="pr-0 navbar navbar-light bg-white shadow-sm py-4 position-absolute w-100" style={{ zIndex:100 }}>
+      <CContainer fluid className="pr-0">
+        <CRow className="w-100 pr-0">
           {/* Column 1*/}
           <CCol xs={3} md={3} lg={3} xl={3} xxl={3}>
             <CNavbarBrand href="#">LOGO</CNavbarBrand>
@@ -38,7 +38,7 @@ export const Header = () => {
           <CCol xs={6} md={6} lg={6} xl={6} xxl={6}>
             <CNavbarToggler onClick={toggleNavigation} className="border-0" />
 
-            <CCollapse visible={showNavigation} className="bg-danger">
+            <CCollapse visible={showNavigation} className="">
               <CNavbarNav className="navbar-nav">
                 <CNavItem >
                   <CNavItem href="#">Home</CNavItem>
