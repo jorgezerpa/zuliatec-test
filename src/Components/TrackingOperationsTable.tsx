@@ -10,7 +10,7 @@ const TableItems = [
 
 export const TrackingOperationsTable = () => {
       return (
-        <CTable>
+        <CTable className=''>
           <CTableHead>
             <CTableRow className='text-white'>
               <CTableHeaderCell scope="col"  ></CTableHeaderCell>

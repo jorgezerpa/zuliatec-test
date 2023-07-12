@@ -1,6 +1,6 @@
 import { CContainer, CRow, CCol } from '@coreui/react'
 import { TrackingOperationsTable } from './TrackingOperationsTable'
-import { TrackingOperationsTableSidebar } from './TrackingOperationsTableSidebar'
+import { CustomAccordion } from './CustomAccordion'
 
 
 
@@ -8,23 +8,40 @@ export const TrackingOperations = () => {
   return (
     <>
         <h2>Tracking Operations</h2>
-        <CContainer fluid className=''>
-            <CContainer className='bg-white pt-4 pb-2 px-2 m-0'>
+        <CContainer fluid className='p-0'>
+            <CContainer className='bg-white pt-4 pb-2 pl-3 m-0'>
                 <p className=''><span className='font-weight-bold'>Project:</span> Ziply-Oregon</p>
             </CContainer>
-            <CContainer className='p-0'>
+            <CContainer className=''>
                 <CRow >
-                    <CCol xs={3} className=''>
-                        <CContainer className='pt-4 pb-2 px-2 m-0'>
-                            <p className="border-bottom border-gray-300"><span className='font-weight-bold'>Central office:</span> Beaverton</p>
-                            <div>
-                                <TrackingOperationsTableSidebar />
-                                <TrackingOperationsTableSidebar />
-                                <TrackingOperationsTableSidebar />
+                    <CCol xs={3} className='p-0 m-0'>
+                        <CContainer className='pt-4 pb-2 px-0 m-0'>
+                            <p className='' style={{ paddingBottom:'1px', paddingLeft: '10px', borderBottom:"2px solid #ddd" }}><span className='font-weight-bold'>Central office:</span> Beaverton</p>
+                            <div style={{paddingLeft: '10px',}}>
+                                <CustomAccordion title='Project: Ziply-Oregon' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 16 16"><path fill="#888" d="M14.25.5H1.75A1.25 1.25 0 0 0 .5 1.75v12.5a1.25 1.25 0 0 0 1.25 1.25h12.5a1.25 1.25 0 0 0 1.25-1.25V1.75A1.25 1.25 0 0 0 14.25.5Zm-1.875 8.125h-3.75v3.75a.625.625 0 1 1-1.25 0v-3.75h-3.75a.625.625 0 0 1 0-1.25h3.75v-3.75a.625.625 0 0 1 1.25 0v3.75h3.75a.625.625 0 1 1 0 1.25Z"/></svg>}>
+                                    <CustomAccordion title='Central office: Beaverton' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 16 16"><path fill="#888" d="M14.25.5H1.75A1.25 1.25 0 0 0 .5 1.75v12.5a1.25 1.25 0 0 0 1.25 1.25h12.5a1.25 1.25 0 0 0 1.25-1.25V1.75A1.25 1.25 0 0 0 14.25.5Zm-1.875 8.125h-3.75v3.75a.625.625 0 1 1-1.25 0v-3.75h-3.75a.625.625 0 0 1 0-1.25h3.75v-3.75a.625.625 0 0 1 1.25 0v3.75h3.75a.625.625 0 1 1 0 1.25Z"/></svg>}>
+                                        <CustomAccordion title='BVTN' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 16 16"><path fill="#888" d="M14.25.5H1.75A1.25 1.25 0 0 0 .5 1.75v12.5a1.25 1.25 0 0 0 1.25 1.25h12.5a1.25 1.25 0 0 0 1.25-1.25V1.75A1.25 1.25 0 0 0 14.25.5Zm-1.875 8.125h-3.75v3.75a.625.625 0 1 1-1.25 0v-3.75h-3.75a.625.625 0 0 1 0-1.25h3.75v-3.75a.625.625 0 0 1 1.25 0v3.75h3.75a.625.625 0 1 1 0 1.25Z"/></svg>}>
+                                            <CustomAccordion title='VAULT' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 15 15"><rect width="14" height="14" x=".5" y=".5" stroke="#9E9E9E" rx="1.5"/></svg>}></CustomAccordion>    
+                                            <CustomAccordion title='MH' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 15 15"><rect width="14" height="14" x=".5" y=".5" stroke="#9E9E9E" rx="1.5"/></svg>}></CustomAccordion>    
+                                            <CustomAccordion title='MH' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 15 15"><rect width="14" height="14" x=".5" y=".5" stroke="#9E9E9E" rx="1.5"/></svg>}></CustomAccordion>    
+                                        </CustomAccordion>    
+                                    </CustomAccordion>    
+                                </CustomAccordion>
+
+                                <CustomAccordion title='Project: 2' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 16 16"><path fill="#888" d="M14.25.5H1.75A1.25 1.25 0 0 0 .5 1.75v12.5a1.25 1.25 0 0 0 1.25 1.25h12.5a1.25 1.25 0 0 0 1.25-1.25V1.75A1.25 1.25 0 0 0 14.25.5Zm-1.875 8.125h-3.75v3.75a.625.625 0 1 1-1.25 0v-3.75h-3.75a.625.625 0 0 1 0-1.25h3.75v-3.75a.625.625 0 0 1 1.25 0v3.75h3.75a.625.625 0 1 1 0 1.25Z"/></svg>}>
+                                    <CustomAccordion title='VAULT' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 15 15"><rect width="14" height="14" x=".5" y=".5" stroke="#9E9E9E" rx="1.5"/></svg>}></CustomAccordion>    
+                                    <CustomAccordion title='MH' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 15 15"><rect width="14" height="14" x=".5" y=".5" stroke="#9E9E9E" rx="1.5"/></svg>}></CustomAccordion>    
+                                    <CustomAccordion title='MH' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 15 15"><rect width="14" height="14" x=".5" y=".5" stroke="#9E9E9E" rx="1.5"/></svg>}></CustomAccordion>    
+                                </CustomAccordion>    
+                                <CustomAccordion title='Project: 3' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 16 16"><path fill="#888" d="M14.25.5H1.75A1.25 1.25 0 0 0 .5 1.75v12.5a1.25 1.25 0 0 0 1.25 1.25h12.5a1.25 1.25 0 0 0 1.25-1.25V1.75A1.25 1.25 0 0 0 14.25.5Zm-1.875 8.125h-3.75v3.75a.625.625 0 1 1-1.25 0v-3.75h-3.75a.625.625 0 0 1 0-1.25h3.75v-3.75a.625.625 0 0 1 1.25 0v3.75h3.75a.625.625 0 1 1 0 1.25Z"/></svg>}>
+                                    <CustomAccordion title='VAULT' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 15 15"><rect width="14" height="14" x=".5" y=".5" stroke="#9E9E9E" rx="1.5"/></svg>}></CustomAccordion>    
+                                    <CustomAccordion title='MH' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 15 15"><rect width="14" height="14" x=".5" y=".5" stroke="#9E9E9E" rx="1.5"/></svg>}></CustomAccordion>    
+                                    <CustomAccordion title='MH' icon={<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 15 15"><rect width="14" height="14" x=".5" y=".5" stroke="#9E9E9E" rx="1.5"/></svg>}></CustomAccordion>    
+                                </CustomAccordion>    
                             </div>
                         </CContainer>
                     </CCol>
-                    <CCol xs={9} className='bg-bg-danger'>
+                    <CCol xs={9} className=' m-0 p-0'>
                         <TrackingOperationsTable />
 
                         <CRow className='bg-white w-100 text-center'>
