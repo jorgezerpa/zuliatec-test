@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  overflow-x: scroll
+  overflow-x: hidden
 }
 
 #root {

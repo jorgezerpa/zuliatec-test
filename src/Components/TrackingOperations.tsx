@@ -9,13 +9,14 @@ export const TrackingOperations = () => {
     <div className='pb-5'>
         <h2>Tracking Operations</h2>
         <CContainer fluid className='p-0'>
-            <CContainer className='bg-white pt-4 pb-2 pl-3 m-0 d-flex justify-content-between align-content-center'>
+            <CContainer className='bg-white pt-4 pb-2 pl-3 m-0 d-flex justify-content-between align-content-center ' fluid>
                 <p className=''><span className='font-weight-bold'>Project:</span> Ziply-Oregon</p>
                 <div className=' px-4 pt-2 d-flex justify-content-center align-content-center font-weight-bold' style={{ borderRadius:'20px', background:'#dfecd6', color:'rgba(0,0,0,.4)' }}>Week 26</div>
             </CContainer>
             <CContainer className=''>
                 <CRow >
-                    <CCol xs={3} className='p-0 m-0'>
+
+                    <CCol xs={12} sm={12} md={12} lg={3} className='p-0 m-0'>
                         <CContainer className='pt-3 pb-2 px-0 m-0'>
                             <p className='' style={{ paddingBottom:'9px', paddingLeft: '10px', borderBottom:"2px solid #ddd" }}><span className='font-weight-bold'> office:</span> Beaverton</p>
                             <div style={{paddingLeft: '10px',}}>
@@ -42,8 +43,11 @@ export const TrackingOperations = () => {
                             </div>
                         </CContainer>
                     </CCol>
-                    <CCol xs={9} className=' m-0 p-0'>
-                        <TrackingOperationsTable />
+
+                    <CCol xs={12} sm={12} md={12} lg={9} className=' m-0 p-0'>
+                        <div >
+                            <TrackingOperationsTable />
+                        </div>
 
                         <CRow className='bg-white w-100 text-center ml-1'>
                                 <CCol className='d-flex flex-column justify-content-center align-items-center'>PERMITS</CCol>

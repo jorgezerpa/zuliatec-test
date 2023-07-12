@@ -66,9 +66,11 @@ export const Header = () => {
                     <path fill="#fff" d="M13 5a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 10c4.42 0 8 1.79 8 4v2H5v-2c0-2.21 3.58-4 8-4Z"/>
                   </svg>
                 </span>
-                Lisbelia Morales <i className="bi bi-caret-down-fill"></i>
+                <span className="d-none d-sm-inline">
+                  Lisbelia Morales <i className="bi bi-caret-down-fill"></i>
+                </span>
               </button>
-              <ul className={`dropdown-menu dropdown-menu-lg-right ${showProfileMenu ? "show" : ""}`} aria-labelledby="dropdownMenuButton">
+              <ul className={`dropdown-menu  dropdown-menu-right dropdown-menu-sm-left ${showProfileMenu ? "show" : ""}`} aria-labelledby="dropdownMenuButton">
                 <li><a className="dropdown-item" href="#">Perfil</a></li>
                 <li><a className="dropdown-item" href="#">Configuración</a></li>
                 <li><a className="dropdown-item" href="#">Ayuda</a></li>
